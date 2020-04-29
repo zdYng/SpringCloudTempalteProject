@@ -1,0 +1,18 @@
+server:
+  address: 192.168.1.104
+  port: 8082
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: product
+
+  cloud:
+    config:
+      label: master
+      profile: dev
+      uri: http://192.168.1.104:18083
+#      discovery:
+#        enabled: true
+#        service-id: config-server
